@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Retail Management System</title>
+  <style>
+    :root {
+      --primary-color: #4B0082;
+      --accent-color: #fca311;
+      --background-light: #f5f5f5;
+      --text-color: #333;
+      --link-color: #4B0082;
+      --btn-bg: #4B0082;
+      --btn-hover: #6a0dad;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--background-light);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      padding: 12px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    header {
+      background-color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      background-color: white;
+      width: 250px;
+      padding: 20px;
+      box-shadow: inset -1px 0 0 rgba(0,0,0,0.1);
+    }
+
+    aside h3 {
+      color: var(--primary-color);
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside ul li {
+      margin: 10px 0;
+    }
+
+    aside ul li a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    main h2 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    section.posts {
+      margin-top: 40px;
+    }
+
+    section.posts h3 {
+      color: var(--accent-color);
+      margin-bottom: 10px;
+    }
+
+    section.posts article {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: var(--btn-bg);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .learn-more-btn:hover {
+      background-color: var(--btn-hover);
+    }
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Posts</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to Electronics Retail System</h1>
+    <p>Your all-in-one solution for managing store operations</p>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Add Product</a></li>
+        <li><a href="#">Manage Inventory</a></li>
+        <li><a href="#">Invoice Generator</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>About the System</h2>
+      <p>This customizable tool streamlines your retail workflow. Easily add products, generate reports, and manage users—all in one place.</p>
+
+      <section class="posts">
+        <h3>Latest Posts</h3>
+        <article>
+          <h4>New Feature: Barcode Integration</h4>
+          <p>We're excited to announce support for barcode scanning in your inventory module!</p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </article>
+        <article>
+          <h4>Tips to Track Sales Effectively</h4>
+          <p>Learn best practices for using reports to monitor your store's performance.</p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </article>
+        <article>
+          <h4>Maintenance Downtime</h4>
+          <p>The system will be offline for scheduled updates on August 10th between 2 - 3 AM.</p>
+          <a href="#" class="learn-more-btn">Learn More</a>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 RetailSys. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+/* font-family: "Open Sans", sans-serif; */
 /* font-family: "Raleway", sans-serif; */
+/* font-family: "Quicksand", sans-serif; */
+/* font-family: "Cookie", cursive; */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* body {
@@ -79,7 +85,7 @@
 .auth-buttons button {
     margin-left: 0.5rem;
     padding: 0.5rem 1rem;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 25px;
     border: none;
     cursor: pointer;
@@ -152,18 +158,28 @@
     color: #fff;
     text-align: center;
     padding: 2rem;
-    top: 60%;
+    top: 70%;
     transform: translateY(-50%);
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    font-weight: 500;
 }
 
 .hero-content p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    background-color: rgba(219, 219, 219, 0.24);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 .hero-buttons .login-btn,
@@ -173,13 +189,19 @@
     font-size: 1rem;
     border-radius: 5px;
     border: none;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .hero-buttons .login-btn {
-    background-color: rgba(231, 231, 231, 0.326);
+    background-color: rgba(165, 165, 165, 0.24);
     backdrop-filter: blur(4px);
     border-radius: 30px;
     color: #fff;
@@ -187,12 +209,12 @@
 }
 
 .hero-buttons .login-btn:hover {
-    background-color: rgba(243, 243, 243, 0.484);
+    background-color: rgba(113, 112, 112, 0.295);
     backdrop-filter: blur(4px);
 }
 
 .hero-buttons .signup-btn {
-    background-color: rgba(231, 231, 231, 0.326);
+    background-color: rgba(165, 165, 165, 0.24);
     backdrop-filter: blur(4px);
     border-radius: 30px;
     color: #fff;
@@ -200,8 +222,18 @@
 }
 
 .hero-buttons .signup-btn:hover {
-    background-color: rgba(243, 243, 243, 0.484);
+    background-color: rgba(113, 112, 112, 0.295);
     backdrop-filter: blur(4px);
+}
+
+.login-btn i {
+    transform: rotate(40deg);
+}
+
+.login-btn i,
+.signup-btn i {
+    font-size: 15px;
+    margin-left: 2px;
 }
 
 /* Responsive Hero */
@@ -272,3 +304,205 @@
         transform: translateY(0);
     }
 }
+
+/* Features Section */
+.features {
+    background-color: #967969;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: #f0e6d2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.social-links i {
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0e6d2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    margin-bottom: 40px;
+    color: #f0e6d2;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: rgba(225, 225, 225, 0.724);
+    backdrop-filter: blur(4px);
+    padding: 30px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease;
+    color: #333;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #5c4033;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #5c4033;
+    font-weight: 400;
+}
+
+.feature-card p {
+    font-size: 15px;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+.single-image-section {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content.full-width {
+    color: #fff;
+    text-align: left;
+    width: 65%;
+    padding: 40px 60px;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+}
+
+.overlay-content.full-width h2 {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.overlay-content.full-width p {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: rgba(141, 141, 141, 0.441);
+    backdrop-filter: blur(4px);
+    padding: 20px 20px;
+    border-left: 4px solid #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Cursuivetext{
+    font-family: "Cookie", cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    letter-spacing: 1.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Section 3 */
+.scrolling-heading {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #000; 
+  border-bottom: 2px solid #444;
+  padding: 5px 0;
+}
+
+.scrolling-heading span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollLeft 60s linear infinite; 
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
